@@ -42,7 +42,8 @@ class App extends Component {
           Y sí funcionó, pero desde el JSON no funcionaba. Por esta razón no dejé el filtro, únicamente muestra información de los departamentos.
 
           Ahora bien, si tomaba exactamente los datos almacenados como "municipios" en el localstorage y lo guardaba en un archivo JSON sí tomaba los datos correctamente.
-          Por lo cual intenté reescribir este archivo. Sin embargo, FileServer no puede ser implementado en el cliente, por lo cual no pude hacerlo.
+          Por lo cual intenté reescribir este archivo. Sin embargo, FileServer no puede ser implementado en el cliente, por lo cual no pude hacerlo. Creo que utilizando 
+          Express puede hacerse esto sin problema y serviria. Y cambiar los elementos de vega-lite como lo habia hecho es fácil de realizar.
 
           Finalmente, opté por dejar un archivo llamado "participación_camara.json" en el cual se encuentra la información completa de
           cada departamento y municipio. Este se encuentra en las carpetas "src/data" y en "public". 
