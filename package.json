@@ -5,10 +5,7 @@
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
-    "vega": "^4.0.0",
-    "vega-embed": "^3.18.1",
-    "vega-lite": "^2.6.0"
+    "react-scripts": "1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
