@@ -6,10 +6,15 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container-fluid"> 
-        <header className="App-header">
           <br/>
           <h1 className="App-title">Elecciones Colombia 2018</h1>
-        </header>
+          <br/>
+          <h3> Aquí puedes encontrar información relacionada con las elecciones para presidente en Colombia.
+          <br/>
+          <br/>
+          <h4>Realizado por Andrés David Laiton <a href="https://twitter.com/David_Laiton/" target="_blank" rel="noopener noreferrer" > @David_Laiton</a></h4>
+          <h4>Código fuente disponible <a href="https://github.com/daviddlaiton/colombiaElections2018" target="_blank" rel="noopener noreferrer" > aquí</a></h4>
+          </h3>
         </div>
       </div>
     );
