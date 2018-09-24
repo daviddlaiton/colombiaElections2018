@@ -1,0 +1,11 @@
+.axis text {
+    font: 12px sans-serif;
+  }
+
+body {
+  background: #eff0f2;
+}
+
+.title {
+    margin-left: 40px;
+}

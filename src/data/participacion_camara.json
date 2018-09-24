@@ -59,7 +59,7 @@
                 "votos_nulos": 11
             },
             {
-                "municipio": "Puerto NariÃ±o",
+                "municipio": "Puerto Nariño",
                 "habilitados": 4444,
                 "votantes": 2740,
                 "votos_no_marcados": 75,
@@ -593,7 +593,7 @@
                 "votos_nulos": 211
             },
             {
-                "municipio": "NariÃ±o",
+                "municipio": "Nariño",
                 "habilitados": 9109,
                 "votantes": 3616,
                 "votos_no_marcados": 196,
@@ -1198,7 +1198,7 @@
         "votos_nulos": 97783
     },
     {
-        "departamento": "BogotÃ¡ D.C.",
+        "departamento": "Bogotá D.C.",
         "habilitados": 5690937,
         "votantes": 2795532,
         "votos_no_marcados": 49585,
@@ -4700,7 +4700,7 @@
                 "votos_nulos": 5637
             },
             {
-                "municipio": "NariÃ±o",
+                "municipio": "Nariño",
                 "habilitados": 2638,
                 "votantes": 1423,
                 "votos_no_marcados": 28,
@@ -6027,7 +6027,7 @@
         "votos_nulos": 43525
     },
     {
-        "departamento": "NariÃ±o",
+        "departamento": "Nariño",
         "municipios": [
             {
                 "municipio": "Alban (san Jose)",
@@ -6303,7 +6303,7 @@
                 "votos_nulos": 207
             },
             {
-                "municipio": "NariÃ±o",
+                "municipio": "Nariño",
                 "habilitados": 5727,
                 "votantes": 4197,
                 "votos_no_marcados": 104,
@@ -6484,7 +6484,7 @@
         "votos_nulos": 50434
     },
     {
-        "departamento": "Norte De San",
+        "departamento": "Norte De Santander",
         "municipios": [
             {
                 "municipio": "Abrego",
