@@ -18,30 +18,24 @@ export default class Graph extends Component {
 
 
     changeDropdown(e) {
-        this.setState({opcion : e.target.value})
+        this.setState({ opcion: e.target.value })
         this.doGraph();
     }
 
-    titleToShow(){
-        switch(this.state.opcion){
+    titleToShow() {
+        switch (this.state.opcion) {
             case "habilitados":
                 return "Número de personas habilitadas para las elecciones del 11 de Marzo de 2018 por Departamento";
             case "votantes":
                 return "Número de personas que votaron en las elecciones del 11 de Marzo de 2018 por Departamento";
             case "votos_no_marcados":
                 return "Número de votos no marcados en las elecciones del 11 de Marzo de 2018 por Departamento"
-            case "votos_nulos" :
+            case "votos_nulos":
                 return "Número de votos nulos en las elecciones del 11 de Marzo de 2018 por Departamento"
         }
     }
 
-    dataToShow() {
-        let resp = [];
-        datos.map((d) => (resp.push(d.habilitados)))
-        return resp;
-    }
-
-    doGraph(){
+    doGraph() {
         let selectedItem = this.state.opcion;
 
         let datosOrdenados = datos.sort(function (a, b) { return b[selectedItem] - a[selectedItem]; });
@@ -69,26 +63,31 @@ export default class Graph extends Component {
             .call(d3.axisLeft(y).ticks(null, "s"))
             .call(g => g.selectAll(".domain").remove());
 
-        function contarMunicipios() {
-            let resp = 0;
-
-            datos.map((d, i) => { resp = i });
-            return resp;
-        }
+        
 
         const svg = d3.select(this.svg);
         svg.html("");
+
+        let tooltip = svg.append("text")
+            .style("font-size", "10pt")
+            .style("font-family", "sans-serif")
+            .style("fill", "steelblue");
 
         svg.append("g")
             .selectAll("g")
             .data(datosOrdenados)
             .enter().append("rect")
             .attr("class", "bar")
-            .attr("x", function (d) { return x(d.departamento)+2 })
+            .attr("x", function (d) { return x(d.departamento) + 2 })
             .attr("y", function (d) { return y(d[selectedItem]) })
             .attr("height", function (d) { return height - y(d[selectedItem]) - 20 })
             .attr("width", 20)
-            .attr("fill", "steelblue");
+            .attr("fill", "steelblue")
+            .on("mouseover", function (d) {
+                tooltip.attr("x", x(d.departamento))
+                  .attr("y", y(d[selectedItem])-10)
+                  .text(`Valor: ${d[selectedItem]} `);
+              });  
 
         svg.append("g")
             .attr("class", "x axis")
@@ -118,7 +117,7 @@ export default class Graph extends Component {
                     <option value="votos_nulos">Número de votos nulos</option>
                 </select>
                 <br />
-                <br/>
+                <br />
                 <h4 className="title">{this.titleToShow()}</h4>
                 <svg width="1050" height="570" ref={(svg) => this.svg = svg}></svg>
             </div>

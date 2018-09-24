@@ -2,16 +2,11 @@
 
 The objective of this project was to create a web page that help show all the information related to the elections in Colombia. 
 
-## Getting Started
-To get a copy of these project install git bash, open it from the command line and use 
-$ git clone: https://github.com/daviddlaiton/colombiaElections2018.git
+The technologies used for this project are JavaScript, React and D3. Also some basic tools of HTML, CSS and Bootstrap.
 
-Then, open the frontend folder directory and run
+You can see this project running [here](https://colombiaelections2018.herokuapp.com/).
 
-$ npm install
-
-To deploy the application run 
-$ npm start
+![Screenshot of the project](/Screenshot.PNG)
 
 ### Prerequisites
 
@@ -23,39 +18,27 @@ Checklist
 NodeJS
 ```
 
-### Installing
+## How to run it
+To get a copy of these project install git bash, open it from the command line and use 
+$ git clone: https://github.com/daviddlaiton/colombiaElections2018.git
 
-Go to the open the frontend folder directory and run the npm install command.
+Then, open the frontend folder directory and run:
 
-```
 $ npm install
-```
-The application should be running in localhost:3000.
 
-
-## Deployment
-
-To deploy the application on a live environment, you should go to the front end directory and run 
-```
-yarn build
-```
-This should generate a build folder.
-
-Finally, modify the server.js file located in the root directory so that it serves the files inside build folder as static content
-```
-    app.use(express.static(path.join(__dirname, "frontend/build")));
-```
+To deploy the application run :
+$ npm start
 
 ## Built With
 
 * [React](https://reactjs.org/) - The javascript library used to develop the front-end.
-* [NPM](https://www.npmjs.com/) - Dependency Management
-
+* [D3](https://d3js.org/) - The JavaScript library for manipulating documents based on data.
+* [NPM](https://www.npmjs.com/) - Dependency Management.
 
 ## Author
 
-* **Andrés David Laiton** - [daviddlaiton](https://github.com/daviddlaiton)
+* **Andrés David Laiton** - [daviddlaiton](https://github.com/daviddlaiton).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
