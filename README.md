@@ -1,6 +1,7 @@
 # Colombia Elections 2018
 
 The objective of this project was to create a web page that help show all the information related to the elections in Colombia. 
+The data used for this project was taken from [here](https://github.com/infrahumano/elecciones2018). Released by [Javier Moreno](https://github.com/finiterank).
 
 The technologies used for this project are JavaScript, React and D3. Also some basic tools of HTML, CSS and Bootstrap.
 

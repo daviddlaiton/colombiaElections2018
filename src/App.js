@@ -27,6 +27,7 @@ class App extends Component {
           </h4>
           <h4>Código fuente disponible <a href="https://github.com/daviddlaiton/colombiaElections2018" target="_blank" rel="noopener noreferrer"> aquí</a>
           </h4>
+          <h4>Datos de los resultados de las votaciones liberados por <a href="https://github.com/finiterank">Javier Moreno</a></h4>
         </div>
       </div>
     );
